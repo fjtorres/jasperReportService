@@ -1,6 +1,7 @@
 package es.fjtorres.jasperReport.service;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -22,7 +23,7 @@ public class Report<T> implements Serializable {
 
    private Format format;
 
-   private Map<String, Object> parameters;
+   private Map<String, Object> parameters = new HashMap<String, Object>();
 
    private String template;
 
@@ -74,4 +75,5 @@ public class Report<T> implements Serializable {
    public void setData(List<T> pData) {
       data = pData;
    }
+
 }

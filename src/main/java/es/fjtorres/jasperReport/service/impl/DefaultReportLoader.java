@@ -5,6 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Paths;
 
+import javax.inject.Named;
+
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperReport;
@@ -12,6 +14,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
 import es.fjtorres.jasperReport.service.IReportLoader;
 import es.fjtorres.jasperReport.service.Report;
 
+@Named
 public class DefaultReportLoader implements IReportLoader {
 
    @Override
